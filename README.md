@@ -50,12 +50,6 @@ This repository contains code separate code versions that run on AWS and Google 
 - gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
 - gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
 
-#  HMDA Big Data Analysis Using PySpark (AWS & GCP)
-
-This project performs large-scale analysis on the **Home Mortgage Disclosure Act (HMDA)** dataset using **PySpark RDD** and **DataFrame abstractions**, deployed across **AWS EMR** and **Google Cloud Dataproc** environments.  
-The objective is to compare **performance, cost, and efficiency** between data abstractions and cloud platforms.
-
----
 
 ## Environment Setup
 
