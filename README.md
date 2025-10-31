@@ -41,12 +41,12 @@ This repository contains code separate code versions that run on AWS and Google 
 - gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
 
 **For AWS RDDs:**
-s3://term-paper-fall-2025/METCS777-term-paper-code_df_aws.py
-s3://term-paper-fall-2025/hmda_2016_sample.csv s3://term-paper-fall-2025/hmda_test
+- s3://term-paper-fall-2025/METCS777-term-paper-code_df_aws.py
+- s3://term-paper-fall-2025/hmda_2016_sample.csv s3://term-paper-fall-2025/hmda_test
 
 **For Google Cloud:**
-gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
-gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
+- gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
+- gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
 
 
 
