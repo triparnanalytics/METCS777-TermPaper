@@ -4,10 +4,15 @@ This repository contains the full implementation and experiments for our METCS77
 ## Project Overview:
 
 **Project Title**: Big Data Performance Evaluation of RDD vs Dataframe on Cloud Platforms  
+
 **By**: Steveen Vargas and Triparna Kundu 
-**Project Purpose:**: Compare Spark RDDs vs. DataFrames on AWS and Google Cloud.
+
+**Project Purpose**: Compare Spark RDDs vs. DataFrames on AWS and Google Cloud.
+
 **Motivation**: Performance, memory, and cost vary across platforms and data types.
+
 **Method**: Test large datasets; measure time, memory, cost.
+
 **Outcome:** Find the most efficient, scalable, and cost-effective configuration.
 
 ## Dataset Information: Home Mortgage Disclosure Act (HMDA) Dataset
