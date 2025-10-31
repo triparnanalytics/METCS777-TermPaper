@@ -129,8 +129,7 @@ You can run the code in **two ways**:
    - Simply choose “Add Step” (AWS) or “Submit Job” (GCP), upload your script, and specify input/output paths.
 
 2. **Using Command Line (Optional)**
-
-### On AWS:
+   
 ```bash
 # Execute on AWS EMR
 python3 df_aws.py
