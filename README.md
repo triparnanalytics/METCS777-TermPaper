@@ -10,6 +10,18 @@ This repository contains the full implementation and experiments for our METCS77
 **Method**: Test large datasets; measure time, memory, cost.
 **Outcome:** Find the most efficient, scalable, and cost-effective configuration.
 
+## Dataset Information: Home Mortgage Disclosure Act (HMDA) Dataset
+- Published annually by the Consumer Financial Protection Bureau (CFPB). Contains detailed information on mortgage applications and outcomes.
+Includes data on:
+- Consumer details and applicant demographics
+- Loan amount and property characteristics
+- Lender information and loan decision (approved, denied, or incomplete)
+- Used to analyze lending patterns and promote fair housing practices.
+
+
+
+
+
 This repository contains code versions to be ran in AWS and Google Cloud. 
 
 File | Description 
