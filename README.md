@@ -161,7 +161,51 @@ python3 rdd_gcp_implement.py
 Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
 
 ---
+### ☁️ Execution Paths for Cloud Platforms
 
+Below are the general and actual paths used for running the PySpark scripts on both AWS and Google Cloud.
+
+---
+
+#### **Generalized Paths**
+
+**For AWS (DataFrames & RDDs):**  
+- `s3://<bucket_name>/<script_filename>.py`  
+- `s3://<bucket_name>/<input_dataset>.csv`  
+- `s3://<bucket_name>/<output_directory>/`
+
+**For Google Cloud (DataFrames & RDDs):**  
+- `gs://<bucket_name>/<script_filename>.py`  
+- `gs://<bucket_name>/<input_dataset>.csv`  
+- `gs://<bucket_name>/<output_directory>/`
+
+>  Ensure your bucket names, file paths, and IAM permissions are correctly configured before execution.
+
+---
+
+#### **Actual Paths Used in This Project**
+
+**For AWS DataFrames:**  
+- Script: `s3://term-paper-fall-2025/df_aws.py`  
+- Input Dataset: `s3://term-paper-fall-2025/hmda_2016_nationwide_all-records_labels.csv`  
+- Output Directory: `s3://term-paper-fall-2025/hmda_test/`
+
+**For AWS RDDs:**  
+- Script: `s3://term-paper-fall-2025/rdd_aws.py`  
+- Input Dataset: `s3://term-paper-fall-2025/hmda_2016_nationwide_all-records_labels.csv`  
+- Output Directory: `s3://term-paper-fall-2025/hmda_test/`
+
+**For Google Cloud DataFrames:**  
+- Script: `gs://metcs777termpaper/df_gcp.py`  
+- Input Dataset: `gs://metcs777termpaper/hmda_2016_nationwide_all-records_labels.csv`  
+- Output Directory: `gs://metcs777termpaper/hmda_test/`
+
+**For Google Cloud RDDs:**  
+- Script: `gs://term-project-fall-2025/rdd_gcp_implement.py`  
+- Input Dataset: `gs://term-project-fall-2025/hmda_2016_nationwide_all-records_labels.csv`  
+- Output Directory: `gs://term-project-fall-2025/hmda_test/`
+
+---
 ## Results and Observations
 
 The generated output files (hmda-rdd-aws-output.txt, DF_aws.txt, hmda_rdd_gcp_output.txt, DF_gcp.txt) contain:
