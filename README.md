@@ -50,6 +50,37 @@ This repository contains code separate code versions that run on AWS and Google 
 - gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
 - gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
 
+---
+
+## Dataset Explanation
+
+Details of the dataset are available in Dataset_attributes.pdf.
+The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
+
+Loan amount, interest rate, applicant income
+
+Lender ID, loan purpose, and loan type
+
+Applicant demographics and other relevant financial metrics
+
+Only numeric features were used for model training to ensure computational efficiency.
+Missing values were imputed and the dataset was standardized before training.
+
+After preprocessing (cleaning, imputation, and feature selection), we used only 20% of the total dataset for our analysis.
+
+## Reason for Sampling
+
+Processing the entire HMDA dataset would require significantly more computational resources and time on both AWS and GCP.
+To maintain a balance between performance accuracy and cost efficiency, we used a 20% representative sample of the data.
+This reduced:
+
+Cluster runtime and storage cost
+
+Computation load on Spark workers
+
+While still preserving a statistically valid distribution of the features and target variables for modeling and analysis.
+
+---
 
 ## Environment Setup
 
@@ -123,6 +154,8 @@ python3 rdd_gcp_implement.py
 
 Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
 
+---
+
 ## Results and Observations
 
 The generated output files (hmda-rdd-aws-output.txt, DF_aws.txt, hmda_rdd_gcp_output.txt, df_gcp_output.txt) contain:
@@ -144,19 +177,4 @@ Top 10 features derived using Information Gain
 Feature importance ranking, showing contribution to overall classification
 
 These outputs enable performance comparison between RDD and DataFrame implementations, as well as AWS vs GCP platform efficiency.
-
-## Dataset Explanation
-
-Details of the dataset are available in Dataset_attributes.pdf.
-The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
-
-Loan amount, interest rate, applicant income
-
-Lender ID, loan purpose, and loan type
-
-Applicant demographics and other relevant financial metrics
-
-Only numeric features were used for model training to ensure computational efficiency.
-Missing values were imputed and the dataset was standardized before training.
-
 
