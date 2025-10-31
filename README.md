@@ -154,11 +154,10 @@ python3 df_aws.py
 python3 rdd_aws.py
 
 ### On Google Cloud:
-```bash
 # Execute on Google Cloud Dataproc
 python3 df_gcp.py
 python3 rdd_gcp_implement.py
-
+```
 Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
 
 ---
