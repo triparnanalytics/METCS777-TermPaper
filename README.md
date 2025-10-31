@@ -59,7 +59,7 @@ This repository contains code separate code versions that run on AWS and Google 
 
 ## Dataset Explanation
 
-Details of the dataset are available in Dataset_attributes.pdf.
+Details of the dataset are available in `Dataset_attributes.pdf`.
 The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
 
 Loan amount, interest rate, applicant income
