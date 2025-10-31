@@ -19,14 +19,16 @@ Includes data on:
 - Used to analyze lending patterns and promote fair housing practices.
 
 ## Dataset Sample
-**hmda_2016_sample.csv** 
-
+**hmda_2016_sample.csv** - This is the sample dataset that was initially used in our local system to test the model.
+**hmda_2016_nationwide_all-records_labels.csv** - This is the large dataset that is used to compute and compare our model performance on cloud platforms.
 
 ## Files Description
 This repository contains code separate code versions that run on AWS and Google Cloud. 
+
 **Dataframes:** 
 - df_aws.py: Contains the code to run the sample data in AWS EMR
 - df_gcp.py: Contains code to run the sample data in Google Cloud
+
 **RDDS**
 - rdd_aws.py: Conttains code to run the sample data in AWS
 - rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
