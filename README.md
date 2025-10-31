@@ -102,6 +102,12 @@ Follow the steps below to configure and run the project on cloud platforms.
 ---
 
 ## How to Run the Code
+You can run the code in **two ways**:
+1. **Through the Cloud Console UI (Recommended)**  
+   - Both AWS EMR and GCP Dataproc allow submitting jobs directly through their web interfaces without using the command line.  
+   - Simply choose “Add Step” (AWS) or “Submit Job” (GCP), upload your script, and specify input/output paths.
+
+2. **Using Command Line (Optional)**
 
 ### On AWS:
 ```bash
@@ -109,6 +115,48 @@ Follow the steps below to configure and run the project on cloud platforms.
 python3 df_aws.py
 python3 rdd_aws.py
 
+### On Google Cloud:
+```bash
+# Execute on Google Cloud Dataproc
+python3 df_gcp.py
+python3 rdd_gcp_implement.py
 
+Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
+
+## Results and Observations
+
+The generated output files (hmda-rdd-aws-output.txt, DF_aws.txt, hmda_rdd_gcp_output.txt, df_gcp_output.txt) contain:
+
+## Performance Metrics
+
+Total execution time
+
+Peak memory usage during the run
+
+Computation cost (estimated based on runtime and resource utilization)
+
+## Model Evaluation
+
+Random Forest model accuracy and AUC score
+
+Top 10 features derived using Information Gain
+
+Feature importance ranking, showing contribution to overall classification
+
+These outputs enable performance comparison between RDD and DataFrame implementations, as well as AWS vs GCP platform efficiency.
+
+## Dataset Explanation
+
+Details of the dataset are available in Dataset_attributes.pdf.
+The dataset originates from the Home Mortgage Disclosure Act (HMDA) database and includes:
+
+Loan amount, interest rate, applicant income
+
+Lender ID, loan purpose, and loan type
+
+Applicant demographics and other relevant financial metrics
+
+Only numeric features were used for model training to ensure computational efficiency.
+Missing values were imputed and the dataset was standardized before training.
 
 
