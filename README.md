@@ -50,6 +50,70 @@ This repository contains code separate code versions that run on AWS and Google 
 - gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
 - gs://term-project-fall-2025/hmda_2016_sample.csv gs://term-project-fall-2025/hmda_test
 
+#  HMDA Big Data Analysis Using PySpark (AWS & GCP)
+
+This project performs large-scale analysis on the **Home Mortgage Disclosure Act (HMDA)** dataset using **PySpark RDD** and **DataFrame abstractions**, deployed across **AWS EMR** and **Google Cloud Dataproc** environments.  
+The objective is to compare **performance, cost, and efficiency** between data abstractions and cloud platforms.
+
+---
+
+## Environment Setup
+
+Follow the steps below to configure and run the project on cloud platforms.
+
+### AWS EMR Setup
+
+1. **Add Bootstrap Script**
+   - Include the `install_lib.sh` file under the **Bootstrap Actions** section during EMR cluster creation.  
+   - This script installs all required Python libraries (NumPy, Pandas, PySpark, psutil, etc.).
+
+2. **Set Up Logging**
+   - Create a `logs/` folder in your **S3 bucket**.  
+   - Add this path under **Cluster Logs** to capture runtime and step logs for monitoring.
+
+3. **Upload and Run Scripts**
+   - Upload the following files to your S3 bucket:  
+     - `df_aws.py`  
+     - `rdd_aws.py`  
+   - Add them as **Steps** during cluster creation or submit them after cluster launch via the EMR console.
+
+4. **Accessing Outputs**
+   - After processing completes, output files will be generated in your S3 bucket:  
+     - `hmda-rdd-aws-output.txt`  
+     - `DF_aws.txt`  
+   - These contain model metrics, system performance, and resource usage reports.
+
+---
+
+### Google Cloud Dataproc Setup
+
+1. **Upload Files**
+   - Upload all `.py` scripts and datasets to your **Google Cloud Storage** bucket:  
+     - `rdd_gcp_implement.py`  
+     - `df_gcp.py`
+
+2. **Create Cluster**
+   - Create a **Dataproc cluster** with PySpark pre-installed, or install dependencies manually.
+
+3. **Submit Job**
+   - Provide the dataset path and desired output location as arguments during job submission.  
+   - Once completed, retrieve the output files from the bucket.
+
+4. **Retrieve Outputs**
+   - Output files generated:  
+     - `hmda_rdd_gcp_output.txt`  
+     - `df_gcp_output.txt`  
+   - These files contain the same performance and accuracy metrics as the AWS results.
+
+---
+
+## How to Run the Code
+
+### On AWS:
+```bash
+# Execute on AWS EMR
+python3 df_aws.py
+python3 rdd_aws.py
 
 
 
