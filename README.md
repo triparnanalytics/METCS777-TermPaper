@@ -164,7 +164,7 @@ Each script automatically logs execution details, saves the results to the speci
 
 ## Results and Observations
 
-The generated output files (hmda-rdd-aws-output.txt, DF_aws.txt, hmda_rdd_gcp_output.txt, df_gcp_output.txt) contain:
+The generated output files (hmda-rdd-aws-output.txt, DF_aws.txt, hmda_rdd_gcp_output.txt, DF_gcp.txt) contain:
 
 ## Performance Metrics
 
