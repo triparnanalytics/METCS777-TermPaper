@@ -144,7 +144,7 @@ python3 rdd_gcp_implement.py
 Each script automatically logs execution details, saves the results to the specified bucket, and prints key performance metrics.
 
 ---
-### ☁️ Execution Paths for Cloud Platforms
+### Execution Paths for Cloud Platforms
 
 Below are the general and actual paths used for running the PySpark scripts on both AWS and Google Cloud.
 
