@@ -25,11 +25,11 @@ Includes data on:
 ## Files Description
 This repository contains code separate code versions that run on AWS and Google Cloud. 
 **Dataframes:** 
-- METCS777-term-paper-code_df_aws.py: Contains the code to run the sample data in AWS EMR
-- METCS777-term-paper-code_df_gcp.py: Contains code to run the sample data in Google Cloud
+- df_aws.py: Contains the code to run the sample data in AWS EMR
+- df_gcp.py: Contains code to run the sample data in Google Cloud
 **RDDS**
-- METCS777-term-paper-code_rdd_aws.py: Conttains code to run the sample data in AWS
-- METCS777-term-paper-code_rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
+- rdd_aws.py: Conttains code to run the sample data in AWS
+- rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
 
 ## Instruction Examples: 
 **For AWS Data Frames:** We fullfill the arguments with the proper file directory structure. 
