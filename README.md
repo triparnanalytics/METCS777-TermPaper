@@ -1,6 +1,15 @@
 # METCS777-TermPaper
 This repository contains the full implementation and experiments for our METCS777 Big Data Analytics term paper. We evaluate how Apache Spark’s RDDs and DataFrames perform across AWS and Google Cloud using large datasets. The study compares processing time, memory use, and cost to identify the most efficient and scalable setup.
 
+## Project Overview:
+
+**Project Title**: Big Data Performance Evaluation of RDD vs Dataframe on Cloud Platforms  
+**By**: Steveen Vargas and Triparna Kundu 
+**Project Purpose:**: Compare Spark RDDs vs. DataFrames on AWS and Google Cloud.
+**Motivation**: Performance, memory, and cost vary across platforms and data types.
+**Method**: Test large datasets; measure time, memory, cost.
+**Outcome:** Find the most efficient, scalable, and cost-effective configuration.
+
 This repository contains code versions to be ran in AWS and Google Cloud. 
 
 File | Description 
