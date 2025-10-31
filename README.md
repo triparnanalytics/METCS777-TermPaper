@@ -38,27 +38,6 @@ This repository contains code separate code versions that run on AWS and Google 
 - rdd_aws.py: Conttains code to run the sample data in AWS
 - rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
 
-## Instruction Examples: 
-**For AWS Data Frames:** We fullfill the arguments with the proper file directory structure. 
-- s3://term-paper-fall-2025/df_aws.py
-- s3://term-paper-fall-2025/hmda_2016_nationwide_all-records_labels.csv
-- s3://term-paper-fall-2025/hmda_test
-
-**For Google Cloud:**
-- gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
-- gs://term-project-fall-2025/hmda_2016_nationwide_all-records_labels.csv
-- gs://term-project-fall-2025/hmda_test
-
-**For AWS RDDs:**
-- s3://term-paper-fall-2025/METCS777-term-paper-code_df_aws.py
-- s3://term-paper-fall-2025/hmda_2016_nationwide_all-records_labels.csv
-- s3://term-paper-fall-2025/hmda_test
-
-**For Google Cloud:**
-- gs://term-project-fall-2025/METCS777-term-paper-code_df_gcp.py
-- gs://term-project-fall-2025/hmda_2016_nationwide_all-records_labels.csv
-- gs://term-project-fall-2025/hmda_test
-
 ---
 
 ## Dataset Explanation
@@ -195,9 +174,9 @@ Below are the general and actual paths used for running the PySpark scripts on b
 - Output Directory: `s3://term-paper-fall-2025/hmda_test/`
 
 **For AWS RDDs:**  
-- Script: `s3://term-paper-fall-2025/rdd_aws.py`  
-- Input Dataset: `s3://term-paper-fall-2025/hmda_2016_nationwide_all-records_labels.csv`  
-- Output Directory: `s3://term-paper-fall-2025/hmda_test/`
+- Script: `s3://metcs777termpaper/rdd_aws.py`  
+- Input Dataset: `s3://metcs777termpaper/hmda_2016_nationwide_all-records_labels.csv`  
+- Output Directory: `s3://metcs777termpaper/hmda_test/`
 
 **For Google Cloud DataFrames:**  
 - Script: `gs://metcs777termpaper/df_gcp.py`  
