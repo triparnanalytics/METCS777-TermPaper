@@ -1,0 +1,29 @@
+=== HMDA Analysis Report (AWS) ===
+Generated at (UTC): 2025-10-31T15:57:27.103373Z
+
+Input: s3a://metcs777-termpaper20007657/hmda_2016_nationwide_all-records_labels.csv
+Records processed: 16332987
+
+
+MODEL PERFORMANCE
+Accuracy: 0.9005
+AUC: 0.97053132390099
+
+TOP FEATURES
+purchaser_type: 0.500887
+lien_status: 0.140129
+application_date_indicator: 0.092564
+applicant_sex: 0.040398
+sequence_number: 0.037266
+applicant_race_1: 0.037195
+agency_code: 0.035384
+applicant_ethnicity: 0.017844
+loan_purpose: 0.015116
+loan_type: 0.013567
+
+PROCESSING METRICS
+Total elapsed time (s): 201.96
+Total memory usage (GB): 5.15
+Estimated compute cost (USD): 0.0397 (nodes=3, rate=0.2356/hr)
+Estimated storage (daily, USD): 0.003949
+Estimated total (compute + daily storage): 0.0436
