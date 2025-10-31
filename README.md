@@ -29,7 +29,7 @@ This repository contains code separate code versions that run on AWS and Google 
 - df_aws.py: Contains the code to run the sample data in AWS EMR
 - df_gcp.py: Contains code to run the sample data in Google Cloud
 
-**RDDS**
+**RDDS:**
 - rdd_aws.py: Conttains code to run the sample data in AWS
 - rdd_gcp_implement.py: Contains code to run sammple data in Google Cloud
 
@@ -66,19 +66,21 @@ Applicant demographics and other relevant financial metrics
 Only numeric features were used for model training to ensure computational efficiency.
 Missing values were imputed and the dataset was standardized before training.
 
-After preprocessing (cleaning, imputation, and feature selection), we used only 20% of the total dataset for our analysis.
+After preprocessing (cleaning, imputation, and feature selection), we used only **20%** of the total dataset for our analysis.
 
-## Reason for Sampling
+###  Reason for Sampling
 
-Processing the entire HMDA dataset would require significantly more computational resources and time on both AWS and GCP.
-To maintain a balance between performance accuracy and cost efficiency, we used a 20% representative sample of the data.
-This reduced:
+Processing the entire HMDA dataset would have required **significantly higher computational resources, time, and storage** on both AWS and GCP.  
+Since our **primary goal** was to **evaluate and compare the performance of different cloud platforms** (AWS vs GCP) and data abstractions (RDD vs DataFrame) **using the same dataset**, it was **not essential to use the entire dataset**.
 
-Cluster runtime and storage cost
+To maintain a **balance between performance accuracy and cost efficiency**, we used a **20% representative sample** of the cleaned and preprocessed dataset.  
+This sampling approach allowed us to:
 
-Computation load on Spark workers
+-  **Reduce cluster runtime and overall computation cost**  
+-  **Lower memory and processing load on Spark workers**  
+-  **Preserve a statistically valid distribution** of key features and target variables for analysis  
 
-While still preserving a statistically valid distribution of the features and target variables for modeling and analysis.
+This ensured that our performance evaluation remained **accurate, scalable, and cost-efficient**, without compromising the reliability of results.
 
 ---
 
